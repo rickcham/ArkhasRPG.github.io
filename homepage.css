@@ -1,0 +1,28 @@
+.Div{
+    margin-right: 20px;
+}
+
+div{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+     align-items: center;   
+}
+p{
+  color: rgb(0, 3, 49);
+      width: 250px;
+      font-size: larger
+     }
+     a{
+      color: rgb(44, 42, 42);
+     }
+
+     body{
+        background-image: url(image\ 2.jpg);
+     }
+
+     .Title{
+        margin: 20px;
+         text-align: center;
+         font-family:'Times New Roman', Times, serif;
+     }

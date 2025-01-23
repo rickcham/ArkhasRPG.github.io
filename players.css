@@ -1,0 +1,85 @@
+
+h1{
+    text-align: center;
+
+}
+
+p{
+    font-size: x-large;
+}
+
+pre{
+    font-size: x-large;
+}
+
+.players{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
+
+
+.ElfSection{
+    background-image: url(images/Elven\ Kingdom\ \(1\).jpg);}
+
+
+.TextElfforge{
+    display: flex;
+     justify-content: space-between;
+     gap: 20px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Armani, .Vogue{
+    flex: 1;
+     padding: 30px;
+     color: gold
+}
+.Eldrin{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 100px;
+    margin-right: 50px;
+    
+}
+.Kenku{
+    margin-left: 50px; 
+    margin-top: 60px;  
+}
+.EldrinSection{
+background-image: url(images/Taihe.jpg);
+}
+
+.ViegoSection{
+    background-image: url(images/ShadowIsles.jpg);
+}
+
+.ViegoDiv{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Viego{
+margin-left: 50px;
+margin-right: 50px;
+height: 675px;
+}
+
+.ViegoText, .ArtText{
+    color: aliceblue;
+    padding: 30px;
+}
+
+.ArtSection{
+background-image: url(images/hell.jpg);
+text-align: center;
+}
+
+.TextArt, .TextArt2{
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
