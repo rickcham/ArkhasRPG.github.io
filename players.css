@@ -60,8 +60,9 @@ background-image: url(images/Taihe.jpg);
 }
 
 .Viego{
-margin-left: 50px;
-margin-right: 50px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
 height: 675px;
 }
 
@@ -71,7 +72,7 @@ height: 675px;
 }
 
 .ArtSection{
-background-image: url(images/hell.jpg);
+background-image: url(images/ArtPact3.jpg);
 text-align: center;
 }
 
