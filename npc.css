@@ -1,5 +1,10 @@
 
+body{
+    background-image: url(farmer-background-image-by-kenny-vo.avif);
+    animation-name: slide-inLeft;
+animation-duration: 2s;
 
+}
 .npcs{
 font-size:large ;
 text-align: center;
@@ -32,9 +37,45 @@ div{
 }
 p{
     margin: auto;
-
+font-size: larger;
 }
 span{
     color:crimson  ;
     font-size: larger;
+}
+
+
+@keyframes slide-inLeft{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+select{
+    cursor: pointer;
+    background-color:#E0E0E0;
+    border: 1px solid black;
+}
+
+select:hover{
+    background-color: #FFFFFF;
+    color: rgb(0, 0, 0);
+ transition: background-color 0.3s;
+}
+button{
+    cursor: pointer;
+    background-color: #E0E0E0;
+    border: 1px solid black;
+}
+
+button:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s;
 }

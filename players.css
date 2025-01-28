@@ -1,10 +1,28 @@
 body{
-    background-image: url(image\ 2.jpg);overflow-x: hidden;}
+    background-image: url(image\ 2.jpg);
+    overflow-x: hidden;}
 
 
 h2{
     text-align: center;
     font-size: x-large;
+}
+
+ul{
+    width: 200px;
+}
+
+li{
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li:hover{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
 }
 
 p, pre {
@@ -19,7 +37,9 @@ p, pre {
 
 
 .ElfSection{
-    background-image: url(images/Elven\ Kingdom\ \(1\).jpg);}
+    background-image: url(images/Elven\ Kingdom\ \(1\).jpg);
+    animation-duration: 2s;
+    animation-name: slide-in;}
 
 
 .TextElfforge{
@@ -45,10 +65,17 @@ p, pre {
     margin-top: 80px;  }
 
 .EldrinSection{
-background-image: url(images/Taihe.jpg);}
+background-image: url(images/Taihe.jpg);
+animation-duration: 3s;
+animation-name: slide-in;}
 
 .ViegoSection{
-    background-image: url(images/ShadowIsles.jpg);}
+    background-image: url(images/ShadowIsles.jpg);
+    animation-duration: 4s;
+animation-name: slide-in;
+
+}
+
 
 .ViegoDiv{
     display: flex;
@@ -67,7 +94,9 @@ height: 675px;}
 
 .ArtSection{
 background-image: url(images/ArtPact3.jpg);
-text-align: center;}
+text-align: center;
+animation-duration: 5s;
+animation-name: slide-in;}
 
 .ArtName{
     color: aliceblue;}
@@ -79,3 +108,21 @@ text-align: center;}
     gap: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;}
+
+    .EredrinSection{
+        background-image: url(images/Eredrin\ \(1\).jpg);
+width: 1440px;
+animation-duration: 6s;
+animation-name: slide-in;
+    }
+
+    @keyframes slide-in{
+        from{
+            margin-left: 100%;
+            width: 300%;
+        }
+        to{
+            margin-left: 0.1%;
+            width: 100%;
+        }
+    }
