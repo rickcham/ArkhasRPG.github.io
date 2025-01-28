@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+
 body{
     background-image: url(images/ArkhasMap.jpg);
     overflow-x: hidden;}
@@ -6,6 +11,44 @@ body{
 h2{
     text-align: center;
     font-size: x-large;
+}
+
+h1{
+        text-align: center;
+        font-size: x-large;
+}
+
+nav{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    color:black;
+    padding: 50px;
+    width:auto;
+    font-size: 20px;
+}
+
+header{
+    margin-top: 50px;
+}
+
+.HomepageBtn{
+    text-align: center;
+    font-size: 30px;
+display:block;
+margin-left: auto;
+margin-right: auto;
+width: 300px;
+}
+
+a:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
 }
 
 ul{
