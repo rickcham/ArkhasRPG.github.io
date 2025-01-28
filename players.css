@@ -9,7 +9,7 @@ h2{
 }
 
 ul{
-    width: 200px;
+    width: 250px;
 }
 
 li{
@@ -51,6 +51,7 @@ p, pre {
 .Armani, .Vogue{
     flex: 1;
      padding: 30px;
+     padding-bottom: 0;
      color: white}
 
 .Eldrin{

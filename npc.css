@@ -1,16 +1,26 @@
 
+
+
+
 body{
     background-image: url(farmer-background-image-by-kenny-vo.avif);
     animation-name: slide-inLeft;
 animation-duration: 2s;
-
+margin-top: 50px;
 }
 .npcs{
 font-size:large ;
 text-align: center;
 font-family: 'Times New Roman', Times, serif;
-
 }
+
+#npc{
+    animation-name: appear;
+    animation-duration: 3s;
+    transition: ease-in-out;
+    
+}
+
 
 .TxT{
     font-size: larger;
@@ -41,7 +51,18 @@ font-size: larger;
 }
 span{
     color:crimson  ;
-    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    border: 3px solid black;
+
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+span:hover{
+    color: rgb(255, 255, 255);
+    transition: color 0.3s;
+    background-color: black;
+    
 }
 
 
@@ -55,6 +76,15 @@ span{
         width: 100%;
     }
 }
+@keyframes appear{
+    from{
+    opacity: 0%;
+    }
+    to{
+   opacity: 100%;
+    }
+}
+
 
 
 select{
