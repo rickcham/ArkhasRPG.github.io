@@ -3,11 +3,33 @@
 
 
 body{
-    background-image: url(farmer-background-image-by-kenny-vo.avif);
-    animation-name: slide-inLeft;
+    background-image: url(images/ArkhasMap.jpg);
+    animation-name: slide-inRight;
 animation-duration: 2s;
-margin-top: 50px;
+transition: ease-in-out;
+overflow: hidden;
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
 }
+
+section{
+    background-image: url(images/playersBackground.jpg);
+    height: 1440px;
+    width: 100%;
+
+
+}
+h1{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h2{
+    margin-left: 30px;
+}
+
 .npcs{
 font-size:large ;
 text-align: center;
@@ -66,14 +88,14 @@ span:hover{
 }
 
 
-@keyframes slide-inLeft{
+@keyframes slide-inRight{
     from{
-        margin-left: 100%;
-        width: 300%;
+transform: translateX(-100%);
+width: 300%;
     }
     to{
-        margin-left: 0%;
-        width: 100%;
+       transform:translateX(0%);
+       width: 100%;
     }
 }
 @keyframes appear{
