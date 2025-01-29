@@ -68,6 +68,10 @@ li:hover{
     transition: ease-in-out 0.5s;
 }
 
+EldrinStats{
+    height: 200px;
+}
+
 p, pre {
     font-size: x-large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
@@ -81,7 +85,7 @@ p, pre {
 
 .ElfSection{
     background-image: url(images/Elven\ Kingdom\ \(1\).jpg);
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-name: slide-in;}
 
 
@@ -99,23 +103,31 @@ p, pre {
 
 .Eldrin{
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-left: 100px;
-    margin-right: 50px;}
+    height: auto;
+}
+
+    .Maneuvers{
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        font-size: 18px;
+   
+
+    }
 
 .Kenku{
     margin-left: 50px; 
-    margin-top: 80px;  }
+    margin-top: 80px;  
+height: 300px;}
 
 .EldrinSection{
 background-image: url(images/Taihe.jpg);
-animation-duration: 3s;
+animation-duration: 2s;
 animation-name: slide-in;}
 
 .ViegoSection{
     background-image: url(images/ShadowIsles.jpg);
-    animation-duration: 4s;
+    animation-duration: 3s;
 animation-name: slide-in;
 
 }
@@ -139,7 +151,7 @@ height: 675px;}
 .ArtSection{
 background-image: url(images/ArtPact3.jpg);
 text-align: center;
-animation-duration: 5s;
+animation-duration: 4s;
 animation-name: slide-in;}
 
 .ArtName{
@@ -156,13 +168,13 @@ animation-name: slide-in;}
     .EredrinSection{
         background-image: url(images/Eredrin\ \(1\).jpg);
 width: 1440px;
-animation-duration: 6s;
+animation-duration: 5s;
 animation-name: slide-in;
     }
 
     @keyframes slide-in{
         from{
-      transform: translateX(400%);
+      transform: translateX(200%);
             width: 300%;
         }
         to{
