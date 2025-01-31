@@ -1,0 +1,131 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(images/ArkhasMap.jpg) ;
+    overflow-x: hidden;
+
+}
+
+h1{
+    text-align: center;
+    animation-name: SlideInLeft;
+    animation-duration: 1s; 
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    animation-name: SlideUp;
+    animation-duration: 1.5s;
+}
+
+a{
+    color: black;
+    font-size: 20px;
+    margin: 5px;
+}
+
+h2{
+    text-align: center;
+}
+
+section{
+    min-height: 800px;
+    animation-name: SlideInRight;
+    animation-duration: 2.5s;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Rilge{
+    background-image: url('Locations/Rilge.jpg');
+}
+
+.Taihe{
+    background-image: url('images/Taihe.jpg');
+}
+
+.Nataloch{
+    background-image: url('Locations/Nataloch.jpg')
+}
+
+.Cursara{
+    background-image: url('Locations/Cursara.jpg')
+}
+
+.Savannia{
+    background-image: url('Locations/Savannia.jpg')
+}
+
+.Hokensei{
+    background-image: url('Locations/Hokensei.jpg')
+}
+
+.XerGath{
+    background-image: url('Locations/Xer\'Gath.jpg')
+}
+.Faldra{
+    background-image: url('Locations/Faldra.jpg')
+}
+.Elfeign{
+    background-image: url('images/Elven\ Kingdom\ \(1\).jpg');
+}
+
+
+
+.RilgeText{
+    text-align: center;
+    font-size: 30px;
+ margin-top: auto;
+ padding: 100px;
+ margin-bottom: 0;
+}
+.RilgeText:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: ease-in 0.5s;
+
+}
+.RilgePre:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: ease-in 0.5s;
+}
+
+@keyframes SlideInRight{
+    0%{
+        transform: translateX(300%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity:1;
+    }
+}
+
+@keyframes SlideInLeft{
+    0%{
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity:1;
+    }
+}
+
+
+@keyframes SlideUp{
+
+0%{
+    transform:translateY(500%);
+    opacity:0;
+}
+100%{
+    transform: translateY(0%);
+    opacity: 1;
+}
+}
