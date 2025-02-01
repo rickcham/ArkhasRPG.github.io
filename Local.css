@@ -42,15 +42,16 @@ section{
     animation-duration: 2.5s;
     display: flex;
     flex-direction: column; /* this turns every section into collumns */
-
-}
-
-.Rilge{
-    background-image: url('Locations/Rilge.jpg');
     position: relative;
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    margin: 5px;
+}
+
+.Rilge{
+    background-image: url('Locations/Rilge.jpg');
+
 }
 
 .Taihe{
@@ -83,7 +84,19 @@ section{
     background-image: url('images/Elven\ Kingdom\ \(1\).jpg');
 }
 
-.Rilge::before {  
+.Homepage{
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    animation-name: SlideUp;
+    animation-duration: 2s;
+}
+
+section::before {  
                             /* ::before Adds an extra styling element before the actual content To create a blur
                             effect without affecting the original background */
     content: "";            /* content: ""	Required for ::before to work We want an invisible styling element */
@@ -99,7 +112,7 @@ section{
     transition: filter 2s ease;
 }
 
-.RilgeText{
+p{
     text-align: center;
     font-size: 30px;
  margin-top: auto;
@@ -107,10 +120,22 @@ section{
  position: relative;    
  margin-bottom: 0;
  z-index: 1;
+font-family: Lucida Console;
 }
 
-.Rilge:hover::before {
-    filter: blur(5px); /* this blurs the Section's background once you hover on it */
+.Cursara, .Taihe, .Faldra, .Savannia, .Hokensei{
+    color: white;
+}
+
+section:hover::before {
+    filter: blur(10px); /* this blurs the Section's background once you hover on it */
+}
+
+.Top{
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+    display: block;
 }
 
 @keyframes SlideInRight{
@@ -126,7 +151,7 @@ section{
 
 @keyframes SlideInLeft{
     0%{
-        transform: translateX(-200%);
+        transform: translateX(-500%);
         opacity: 0;
     }
     100%{
@@ -146,4 +171,18 @@ section{
     transform: translateY(0%);
     opacity: 1;
 }
+}
+
+@keyframes slideDown{
+
+0%{
+    transform: translateY(-100%);
+    opacity:0;
+}
+
+100%{
+    transform:translateY(0%);
+    opacity:1;
+}
+
 }
