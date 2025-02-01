@@ -1,0 +1,54 @@
+body{
+    background-image: url(images/ArkhasMap.jpg);
+}
+
+#TextPart, #MonsterPart{
+    margin: 5px;
+    border: solid black 5px;
+    text-align: center;
+
+}
+button{
+    display: block;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    transition: 1s ease-in-out;
+}
+button:hover{
+    color: black;
+    background-color: white;
+transition: 0.5s;
+}
+
+textarea{
+    background-color: black;
+    color: white;
+    border: solid black 2px;
+    transition: 1s ease-in-out;
+}
+
+textarea:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+a{
+    font-size: 50px;
+text-align: center;
+    border: solid black 1px;
+    color: black;
+    margin: auto;
+    padding: 0%;
+    display: block;
+    margin-top: 10px;
+    transition: 1s;
+}
+
+a:hover{
+    background-color: black;
+    color: white;
+    border: solid black 2px;
+    transition: 0.5s ease-in-out;
+}
