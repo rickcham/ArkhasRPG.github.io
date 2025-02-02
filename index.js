@@ -25,7 +25,7 @@ else if ( adventurernpc === "Ezreal"){
     AdventurerDescription.innerHTML = '<p style ="color: yellow;"> Human Adventurer who came from Arcanum,loves exploring dungeons and getting tresure. although he is cheerful and playful around everyone, even the ones who are clearly not friendly, he knows what it is to lose someone precious </p>'
 }
 else if ( adventurernpc ==="Eyren Seit" ){
-    AdventurerDescription.innerHTML = '<p style = "color:#1c1f22;">A mysterious sorceress which weirdly has the traits of a elf and a beholder at the same time, even though she is confirmed to be very powerful and hold wisdom Vel Koz offered her, she is extremely volatile and twisted, most of the time she is messing on this she should not since according to her, she has never left the library </p>'
+    AdventurerDescription.innerHTML = '<p style = "color:lightgrey;">A mysterious sorceress which weirdly has the traits of a elf and a beholder at the same time, even though she is confirmed to be very powerful and hold wisdom Vel Koz offered her, she is extremely volatile and twisted, most of the time she is messing on this she should not since according to her, she has never left the library </p>'
 }
 else if ( adventurernpc === "Faris"){
     AdventurerDescription.innerHTML = '<p style = "color:lightseagreen;">A human From the group who defeated the Ancient One, Faris is one of the members of the Warriors of Dawn that is left after 2000 years. she is believed to be a cruel pirate who kills people instantly if they wrong her, although she does not mind these rumors for some reason </p>'
@@ -35,8 +35,13 @@ else if ( adventurernpc === "Zuo Bai"){
     }
 else if ( adventurernpc === "Youmu"){
 AdventurerDescription.innerHTML = '<p style = "color:cyan;"> A misteryous sword master who exhibits an otherworldly presence, her swords Hakourouken and Roukanken are said to be able to cut through anything and send undead to the afterlife by force, strangely she also seems to work as an adventurer </p>'
-}}
+}
 
+else if ( adventurernpc === "Alaric"){ 
+    AdventurerDescription.innerHTML = '<p style = "color: Darkblue;"> Former member of the dark souls, a boy who made a pact with an ancient goddess of darkness and now is adventuring along Eyren Seit</p>'
+}
+else if ( adventurernpc === "Nordlyss"){ 
+    AdventurerDescription.innerHTML = '<p style = color:grey> Nordlyss is a former member of the dark souls, after surviving an encounter with a giant creatured deemed as the protector of the jungle, he seems to have awakened dark powers of his own, he is also travelling alongside Eyren Seit</p>' }}
 
     function ShopCheck (){
     const Shop = document.getElementById('Shop').value
@@ -75,7 +80,9 @@ function Godcheck(){
 if (God === 'VelKoz'){
 DeityDescription.innerHTML = '<p style = "color:pink;"> A mysterious man which has a library with the information of the whole world and he seems to be sealed in this place, he is constantly searching for more knowledge </p>'
 }
-}
+else if ( God === "Plantera"){ 
+   DeityDescription.innerHTML = '<p style = "color:green;">An Eldritch abomination with the appearance of a giant flower bulb, it seems to be the protector of the jungle, only awakened by great disturbances throughout its own domain</p>'
+}}
 
 function Othercheck(){
     const Other = document.getElementById('Others').value
@@ -86,6 +93,9 @@ function Othercheck(){
 else if (Other ==="AnnaBlood"){
     OtherDescription.innerHTML = '<p style = "color:lightgreen;">All but rumors of her existance are heard nowadays, Anna once created what is called the Mighty Oak, but most commonly know as the Elven Exterminator War Machine, a giant wooden golem which slaughtered thousands of elves not so long ago, her intentions were never revealed though her objective clear: destroy the elven clans</p>'
 
+}
+else if (Other ==="Mirsyl"){
+    OtherDescription.innerHTML = '<p style = "color:darkgreen;">Mirsyl, a Sage wood elf living in the jungle, not much is known about her currently</p>'
 }
 }
 
