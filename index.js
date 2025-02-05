@@ -72,7 +72,9 @@ FoeDescription.innerHTML = '<p style = "color:lightblue;" >"Little is known abou
 else if (Foe ==="Cgolem"){
     FoeDescription.innerHTML = '<p style = "color:lightblue;">A golem located in a abandoned crystal mining site due to the village responsible for it being destroyed, he protects his cavern with might although he respects those who come to take fair amounts of crystals and leave</p>'
 }
-}
+else if (Foe === 'Lich'){
+    FoeDescription.innerHTML = '<p style = "color:red;">A mysterious creature found to be undead which came by after Jol was slain and desintegrated Kageyama, one of Dark Souls members</p>'
+}}
 
 function Godcheck(){
     const God = document.getElementById('Gods').value
@@ -90,8 +92,8 @@ function Othercheck(){
     if (Other ==="AnnaPrincess"){
         OtherDescription.innerHTML = '<p style = "color:lightgreen;"> Anna was the heir of the throne from the Elven Kingdom but that fact changed when her father, the king died, on which her uncle usurped the throne and slowly erased the records of her existence from history </p>'
     }     
-else if (Other ==="AnnaBlood"){
-    OtherDescription.innerHTML = '<p style = "color:lightgreen;">All but rumors of her existance are heard nowadays, Anna once created what is called the Mighty Oak, but most commonly know as the Elven Exterminator War Machine, a giant wooden golem which slaughtered thousands of elves not so long ago, her intentions were never revealed though her objective clear: destroy the elven clans</p>'
+else if (Other ==="AnbaBlood"){
+    OtherDescription.innerHTML = '<p style = "color:lightgreen;">Ana is the creator of the mighty oak and the one who slaughtered hundreds if not thousands of elves </p>'
 
 }
 else if (Other ==="Mirsyl"){
