@@ -13,6 +13,10 @@ h2{
     font-size: x-large;
 }
 
+img{
+    z-index: 1;
+}
+
 h1{
         text-align: center;
         font-size: x-large;
@@ -35,7 +39,40 @@ header{
     margin-top: 50px;
 }
 
+section{
+    min-height: 800px;
+    animation-name: SlideInRight;
+    animation-duration: 2.5s;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin: 5px;
+}
 
+section::before {  
+    /* ::before Adds an extra styling element before the actual content To create a blur
+    effect without affecting the original background */
+content: "";            /* content: ""	Required for ::before to work We want an invisible styling element */
+position: absolute;     /* position: relative;	Keeps the element in its original place but allows movement */
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-image: inherit;
+background-size: inherit;
+background-position: inherit;
+z-index: -1;             /* z-index	Controls which element appears on top */
+transition: filter 2s ease;
+}
+
+section:hover::before {
+    filter: blur(10px); /* this blurs the Section's background once you hover on it */
+}
+
+*{
+    z-index: 1;
+}
 
 .HomepageBtn{
     text-align: center;

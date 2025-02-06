@@ -25,7 +25,7 @@ let RollResult = document.getElementById('RollResult').value
 
 function RandomRoll(){
   let minNumber = 1
-let MaxNumber = 20;
+let MaxNumber = 21;
 let result = Math.floor(Math.random() * (MaxNumber- minNumber)) + minNumber;
 let Rollcalculations = result
 
